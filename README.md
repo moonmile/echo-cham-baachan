@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# エコーチェンばぁちゃん
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+小中学生向けに、自分の意見が通る「エコーチェンバー現象」を疑似体験するツール。
+反対意見がでてこないので、自分の意見が正しいと錯覚しやすくなる。
 
-## Available Scripts
+エコーチェンバー現象 - Wikipedia 
+https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B3%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%83%90%E3%83%BC%E7%8F%BE%E8%B1%A1
 
-In the project directory, you can run:
+## 機能
 
-### `npm start`
+- 自分の意見を入れると、5人のエコーチェンばぁちゃんが賛同してくれる。
+- ばぁちゃんたちは、賛同の言葉をランダムに変化させる。
+- 画面は、LINE のように吹き出しとばぁちゃんのアイコンが表示される。
+- ばぁちゃんの性格は、いくつかのシステムプロンプトを用意して切り替えられる。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 画面構成
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 入力エリア
+  - 自分の意見を入力するテキストエリア
+  - 送信ボタン
+- チャットエリア
+  - ばぁちゃんのアイコンと吹き出しで構成されるチャット表示エリア
 
-### `npm test`
+## 技術スタック
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- フロントエンド: React
+- フロントエンドから OpenAI API へのリクエスト: Axios
+- デプロイ: Vercel
+- AI モデル: OpenAI GPT-5
 
-### `npm run build`
+## 環境変数 .env
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- OPENAI_API_KEY: OpenAI API キー
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
