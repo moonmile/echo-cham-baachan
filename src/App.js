@@ -56,8 +56,8 @@ function App() {
     setMessages((prev) => [...prev, userMsg]);
     setIsLoading(true);
 
-    // 5人のばぁちゃんからランダムな順序で返答
-    const shuffledIndices = [0, 1, 2, 3, 4].sort(() => Math.random() - 0.5);
+    // 5人のばぁちゃんからランダムに3人を選んで返答
+    const shuffledIndices = [0, 1, 2, 3, 4].sort(() => Math.random() - 0.5).slice(0, 3);
 
     for (const index of shuffledIndices) {
       await new Promise((resolve) => setTimeout(resolve, getRandomDelay()));
